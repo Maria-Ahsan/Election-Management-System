@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Manage Voters</title><link rel="stylesheet" href="style.css"></head>
+<body data-role="admin" data-page="manage-voters"><main><h1>Manage voters</h1><p class="sub">Search, edit or remove registered voters.</p>
+<div class="bar"><input data-filter="#vt" placeholder="Search by name or CNIC"></div>
+<div class="wrap"><table id="vt"><thead><tr><th>Name</th><th>CNIC</th><th>Region</th><th>Voted</th><th></th></tr></thead><tbody>
+<tr><td>Ayesha Khan</td><td>35202-1234567-8</td><td>Lahore</td><td><span class="tag">Yes</span></td><td><button class="btn sm" onclick="alert('Edit form opens here')">Edit</button> <button class="btn red sm del">Delete</button></td></tr>
+<tr><td>Hamza Ali</td><td>42101-7654321-5</td><td>Karachi</td><td><span class="tag no">No</span></td><td><button class="btn sm" onclick="alert('Edit form opens here')">Edit</button> <button class="btn red sm del">Delete</button></td></tr>
+<tr><td>Zara Noor</td><td>61101-1112223-4</td><td>Islamabad</td><td><span class="tag no">No</span></td><td><button class="btn sm" onclick="alert('Edit form opens here')">Edit</button> <button class="btn red sm del">Delete</button></td></tr></tbody></table></div>
+<div class="card" style="margin-top:18px"><h3>Add new voter</h3><br><form class="f" data-demo="Voter added!"><input placeholder="Name" required><input placeholder="CNIC" required><input placeholder="Province"><input placeholder="District"><select><option>Female</option><option>Male</option></select><input type="date"><input placeholder="Phone no"><button class="btn">Add voter</button></form></div></main></body><script src="app.js"></script></html>
